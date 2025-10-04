@@ -13,3 +13,7 @@
 2. Question #10 didn't ask for a check whether longFoodNames == shortFoodNames. Included it.
 
 3. Spring Rolls and Clam Chwoder both have length of 12. This is an issue when evaluating which is longest.
+
+## Reflection:
+> Focusing hard on C++ this Summer and Fall has really paid dividends for things like this.
+> JavaScript seems like C++'s easier and more intuitive cousin!
