@@ -33,13 +33,21 @@ console.log();
     // "Have you ever tried ____?"
     // "I always recommend ____ to friends."
     // "Trust me — ____ is delicious."
-
-
-
+function printFoodRecommendation(foodName) {
+    console.log("Have you ever tried", foodName, "?");
+    console.log("I always recommend", foodName, "to friends.");
+    console.log("Trust me -", foodName, "is delicious.");
+}
 
 // 4b. Call the function at least 3 times
+console.log("#4b - Print 3 recommendations");
+printFoodRecommendation("Pizza");
+console.log();
+printFoodRecommendation("Steak");
+console.log();
+printFoodRecommendation("Ramen");
 
-
+console.log();
 
 // Here's a list of 50 friends' favorite foods:
 let friendFavorites = [
@@ -48,7 +56,13 @@ let friendFavorites = [
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
 
-
+console.log("#5 - Foods Containing \"a\"");
+for (let i = 0; i < friendFavorites.length; i++) {
+    // Lowercase covers cases like Apple, Aardvark, Anteater, Apricot
+    if (friendFavorites[i].toLowerCase().includes("a")) {
+        console.log(friendFavorites[i]); // Ensure there's a semicolon here
+    }
+}
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
 
