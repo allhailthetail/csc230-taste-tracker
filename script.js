@@ -4,7 +4,6 @@ console.log("#1 - No Output");
 console.log();
 let favoriteFoods = ["Pizza", "Chicken Sandwich", "Hamburger", "Soup", "Salad", "Ramen", "Steak"];
 
-
 // 2. Loop through the list and print: "One of my favorite foods is ______."
 console.log("#2 - Print favorite foods");
 for (i = 0; i < favoriteFoods.length; ++i) {
@@ -55,6 +54,7 @@ let friendFavorites = [
   ];
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
+//    What?  Pizza definitely has an a in it??
 
 console.log("#5 - Foods Containing \"a\"");
 for (let i = 0; i < friendFavorites.length; i++) {
@@ -63,6 +63,8 @@ for (let i = 0; i < friendFavorites.length; i++) {
         console.log(friendFavorites[i]); // Ensure there's a semicolon here
     }
 }
+
+console.log();
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
 console.log("#6 - store \"a\" matches in foodsWithA");
@@ -81,7 +83,6 @@ for (let i = 0; i < friendFavorites.length; i++) {
 for (i = 0; i < foodsWithA.length; ++i) {
     console.log("Match \"a\":", foodsWithA[i]);
 }
-
 
 console.log();
 
