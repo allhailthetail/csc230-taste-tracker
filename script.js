@@ -123,7 +123,34 @@ console.log();
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
+console.log("#9 - Conditional - ID which array is longer");
 
+if (longFoodNames.length > shortFoodNames.length) {
+    console.log("There are more long-named foods.");
+} else if (shortFoodNames.length > longFoodNames.length) {
+    console.log("There are more short-named foods.");
+} else {
+    console.log("There are just as many long-named foods as short-named foods");    // Don't forget the edge case!
+}
+
+console.log();
 
 // 10. STRETCH: Find the longest food name and print:
 // "The longest food name in the list is ______ with ___ characters."
+console.log("#10 - Print longest food name & length");
+
+// Blindly assign first val... (technique works well in my C++ course...)
+let longest = longFoodNames[0];
+
+// Well, we know the longest name will be in the longFoodNames Array:
+for (i = 1; i < longFoodNames.length; i++) {
+    if (longFoodNames[i].length > longest.length) {
+        // If length of current is longer, reassign to longest var...
+        longest = longFoodNames[i];
+    }
+}
+
+console.log("The longest food name in the list is:", longest, "with", longest.length, "characters");
+
+// ? Spring Rolls and Clam Chowder both have 11/12 (spaces exclusive/inclusive) characters in them.
+//   There's a tie condition in the result, so I just returned the first...
