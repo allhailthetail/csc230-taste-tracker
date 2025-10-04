@@ -65,16 +65,61 @@ for (let i = 0; i < friendFavorites.length; i++) {
 }
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
+console.log("#6 - store \"a\" matches in foodsWithA");
+
+let foodsWithA = [];
+
+console.log("Storing Foods with A in array:");
+for (let i = 0; i < friendFavorites.length; i++) {
+    // Lowercase covers cases like Apple, Aardvark, Anteater, Apricot
+    if (friendFavorites[i].toLowerCase().includes("a")) {
+        foodsWithA.push(friendFavorites[i]);
+    }
+}
+
+// Print the array
+for (i = 0; i < foodsWithA.length; ++i) {
+    console.log("Match \"a\":", foodsWithA[i]);
+}
 
 
+console.log();
 
 // 7. Create a new array longFoodNames for foods with names longer than 6 characters.
+console.log("#7 - longFoodNames > 6 char");
 
+let longFoodNames = [];
 
+for (let i = 0; i < friendFavorites.length; i++) {
+    if (friendFavorites[i].length > 6) {
+        longFoodNames.push(friendFavorites[i]);
+    }
+}
+
+// Print the array
+for (i = 0; i < foodsWithA.length; ++i) {
+    console.log("Match len > 6:", longFoodNames[i]);
+}
+
+console.log();
 
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
+console.log("#8 - shortFoodNames <= 6 char");
 
+let shortFoodNames = [];
 
+for (i = 0; i < friendFavorites.length; i++) {
+    if (friendFavorites[i].length <= 6) {
+        shortFoodNames.push(friendFavorites[i]);
+    }
+}
+
+// Print the array
+for (i = 0; i < shortFoodNames.length; ++i) {
+    console.log("Match len <= 6:", shortFoodNames[i]);
+}
+
+console.log();
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
